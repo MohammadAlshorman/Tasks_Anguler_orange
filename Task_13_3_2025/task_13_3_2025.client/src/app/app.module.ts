@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignComponent } from './sign/sign.component';
 import { RegComponent } from './reg/reg.component';
 import { CategoryComponent } from './category/category.component';
+import { ProudectComponent } from './proudect/proudect.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CategoryComponent } from './category/category.component';
     FooterComponent,
     SignComponent,
     RegComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProudectComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

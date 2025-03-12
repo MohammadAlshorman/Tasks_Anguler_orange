@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignComponent } from './sign/sign.component';
 import { RegComponent } from './reg/reg.component';
 import { CategoryComponent } from './category/category.component';
+import { ProudectComponent } from './proudect/proudect.component';
 
 const routes: Routes = [
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'sign', component: SignComponent },
   { path: 'reg', component: RegComponent },
   { path: 'category', component: CategoryComponent },
+  { path: 'product', component:ProudectComponent   }
 
 
 
