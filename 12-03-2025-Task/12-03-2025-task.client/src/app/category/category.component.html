@@ -1,0 +1,14 @@
+<h2>Categories</h2>
+
+
+
+<div style="display:flex; justify-content:center; gap:10px">
+  <div class="card" style="width: 18rem;" *ngFor="let category of categories">
+    <!--<img class="card-img-top" src={{category.img}} alt="Card image cap">-->
+    <div class="card-body">
+      <h5 class="card-title">{{category.name}}</h5>
+      <p class="card-text">{{category.description}}</p>
+      <a [routerLink]= "['/products', category.id]" class="btn btn-primary">Products</a>
+    </div>
+  </div>
+</div>
