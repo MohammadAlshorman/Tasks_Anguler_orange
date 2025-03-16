@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <div class="form-container">
+    <h2 class="text-center">register</h2>
+    <form #register="ngForm" (ngSubmit)=" PostData(register.value)" >
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" value="Jill Schultz" name="name" ngModel required>
+      </div>
+      <div class="mb-3">
+        <label for="avatar" class="form-label">Avatar URL</label>
+        <input type="text"   name="avatar" ngModel class="form-control" id="avatar" value="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/202.jpg" required>
+      </div>
+      <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input type="number"  name="age" ngModel class="form-control" id="age" value="22" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email"  name="Email" ngModel  class="form-control" id="email" value="Cleo_Pagac@example.org" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password"  name="password" ngModel class="form-control" id="password" value="0GD_Q7KmU5KBBFy" required>
+      </div>
+      <div class="mb-3 text-center">
+        <img src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/202.jpg" alt="Avatar Preview" class="avatar-preview">
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+  </div>
+</div>

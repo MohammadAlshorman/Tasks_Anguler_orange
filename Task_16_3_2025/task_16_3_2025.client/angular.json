@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "12-03-2025-task.client": {
+    "task_16_3_2025.client": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/12-03-2025-task.client",
+            "outputPath": "dist/task_16_3_2025.client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -51,8 +51,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
@@ -69,17 +69,16 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "12-03-2025-task.client:build:production"
+              "buildTarget": "task_16_3_2025.client:build:production"
             },
             "development": {
-              "buildTarget": "12-03-2025-task.client:build:development"
+              "buildTarget": "task_16_3_2025.client:build:development"
             }
           },
           "defaultConfiguration": "development",
           "options": {
-
             "proxyConfig": "src/proxy.conf.js",
-            "port": 60631
+            "port": 55764
           }
         },
         "extract-i18n": {
@@ -110,6 +109,6 @@
     }
   },
   "cli": {
-    "analytics": "69b8a25f-ce3d-4685-a594-e244d217699a"
+    "analytics": "adaffdb3-1f88-43d5-bd4f-a8f3ad47742b"
   }
 }

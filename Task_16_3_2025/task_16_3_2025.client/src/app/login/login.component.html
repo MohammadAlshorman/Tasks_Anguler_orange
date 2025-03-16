@@ -1,0 +1,17 @@
+<div class="container">
+  <h2 class="text-center">Login</h2>
+
+  <form (ngSubmit)="getData(loginForm.value)" #loginForm="ngForm">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="Email" ngModel required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" ngModel required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid">Login</button>
+  </form>
+</div>
