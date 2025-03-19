@@ -1,0 +1,14 @@
+
+
+<a routerLink="/Dashboard/AddProduct" class="btn btn-primary">Add New Product</a>
+
+<div *ngFor="let item of product">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.Name}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h6>{{item.Price}}</h6>
+    </div>
+  </div>
+</div>
