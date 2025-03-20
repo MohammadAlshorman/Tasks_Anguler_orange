@@ -1,0 +1,27 @@
+
+
+
+
+<h1>Bilal</h1>
+<form #ProForm="ngForm" (ngSubmit)="Edit_Product(ProForm.value)">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="Name" [(ngModel)]="Product.Name" class="form-control" id="name" placeholder="Enter Name">
+  </div>
+
+  <div class="form-group">
+    <label for="Price">Price</label>
+    <input type="number" name="Price" [(ngModel)]="Product.Price" class="form-control" id="Price" placeholder="Enter Price">
+  </div>
+
+  <div class="form-group">
+    <label for="Category_ID">Category</label>
+    <select name="Category_ID" [(ngModel)]="Product.Category_ID" class="form-control">
+      <option *ngFor="let item of AllCategory" [value]="item.id">{{ item.name }}</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
