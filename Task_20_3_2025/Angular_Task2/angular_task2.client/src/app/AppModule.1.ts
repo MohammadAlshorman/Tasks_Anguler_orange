@@ -17,34 +17,36 @@ import { AddCategoryComponent } from './Admin/add-category/add-category.componen
 import { AddProductComponent } from './Admin/add-product/add-product.component';
 import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
 import { EditProductComponent } from './Admin/edit-product/edit-product.component';
-import { ShormanComponent } from './shorman/shorman.component';
-import { NgxPaginationModule } from 'ngx-pagination';
+import { ProfileComponent } from './Admin/profile/profile.component';
+
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CategoryComponent,
-    ProductComponent,
-    NavbarComponent,
-    ProductDetailsComponent,
-    RegComponent,
-    LoginComponent,
-    DashboardComponent,
-    GetCategoryComponent,
-    GetProductComponent,
-    AddCategoryComponent,
-    AddProductComponent,
-    EditCategoryComponent,
-    EditProductComponent,
-    ShormanComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    FormsModule,
-    NgxPaginationModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        CategoryComponent,
+        ProductComponent,
+        NavbarComponent,
+        ProductDetailsComponent,
+        RegComponent,
+        LoginComponent,
+        DashboardComponent,
+        GetCategoryComponent,
+        GetProductComponent,
+        AddCategoryComponent,
+        AddProductComponent,
+        EditCategoryComponent,
+        EditProductComponent,
+        ProfileComponent
+    ],
+    imports: [
+        BrowserModule, HttpClientModule,
+        AppRoutingModule,
+        FormsModule
+
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
