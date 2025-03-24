@@ -1,0 +1,24 @@
+<p>profile works!</p>
+
+<label>Name:</label>
+<p>{{user.name}}</p>
+
+<label>avatar:</label>
+<p>{{user.avatar}}</p>
+
+<label>age:</label>
+<p>{{user.age}}</p>
+
+<label>Email:</label>
+<p>{{user.Email}}</p>
+
+<label>password:</label>
+<p>{{user.passeord}}</p>
+
+<button (click)="activeModel()" >Edit Profile</button>
+
+<app-edit-profile *ngIf="enableEdit"
+                  [User]="user"
+                  (UpdateData)="UpdateProfile($event)"
+                  ></app-edit-profile>
+

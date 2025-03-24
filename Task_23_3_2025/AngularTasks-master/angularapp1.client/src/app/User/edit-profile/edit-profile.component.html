@@ -1,0 +1,26 @@
+<p>edit-profile works!</p>
+
+<form #userData="ngForm" (ngSubmit)="saveChange(userData.value)">
+
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="User.name" ngModel name="name" />
+
+  <label>avatar:</label>
+  <input type="text" [(ngModel)]="User.avatar" ngModel name="avatar"/>
+
+  <label>age:</label>
+  <input type="text" [(ngModel)]="User.age" ngModel name="age"/>
+
+  <label>Email:</label>
+  <input type="text" [(ngModel)]="User.Email" ngModel name="Email"/>
+
+  <label>password:</label>
+  <input type="text" [(ngModel)]="User.password" ngModel name="password" />
+
+  <input type="text" [(ngModel)]="User.id" ngModel name="id" hidden/>
+
+
+  <button type="submit">save change</button>
+
+
+</form>

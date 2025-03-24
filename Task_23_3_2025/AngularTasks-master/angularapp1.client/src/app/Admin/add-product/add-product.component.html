@@ -1,0 +1,19 @@
+<form #product="ngForm" (ngSubmit)="onSubmitData(product.value)">
+  <div class="form-group mt-3">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Category name" ngModel>
+  </div>
+  <div class="form-group mt-3">
+    <label for="avatar" name="avatar">image</label>
+    <input type="file" class="form-control" id="avatar" name="avatar" ngModel>
+
+  </div>
+  <label for="categoryId mt-3" name="categoryId">category</label>
+
+  <select class="form-select " aria-label="Default select example" name="categoryId" id="categoryId" ngModel>
+
+    <option  *ngFor="let cat of categories" value="{{cat.id}}">{{cat.name}}</option>
+  </select>
+
+  <button type="submit" class="btn btn-primary mt-3">add product</button>
+</form>

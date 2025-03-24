@@ -1,0 +1,21 @@
+
+<div class="container d-flex flex-wrap gap-3 mt-5">
+  <a routerLink="/dashboard//addCategory" class="btn btn-primary">add category</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">products</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of data">
+        <td>{{category.id}}</td>
+        <td>{{category.name}}</td>
+        <td></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

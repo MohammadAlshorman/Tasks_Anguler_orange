@@ -1,0 +1,23 @@
+<div class="container d-flex flex-wrap gap-3 mt-5">
+  <a routerLink="/dashboard/addVoucher" class="btn btn-success">add voucher</a>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">price</th>
+        <th scope="col">quantity</th>
+        <th>Edit Voucher</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let voucher of vouchers">
+        <td>{{voucher.id}}</td>
+        <td>{{voucher.name}}</td>
+        <td>{{voucher.price}}</td>
+        <td>{{voucher.quantity}}</td>
+        <td><a routerLink="/dashboard/editVoucher/{{voucher.id}}" class="btn btn-success">Edit Voucher</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
